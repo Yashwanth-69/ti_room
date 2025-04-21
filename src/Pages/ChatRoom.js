@@ -19,7 +19,7 @@ function ChatRoom({user}) {
   
   const handleSignOut = () => {
     signOut(auth)
-    navigate('/login');
+    navigate('/');
   };
   
   useEffect(() => {
