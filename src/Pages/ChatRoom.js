@@ -52,7 +52,7 @@ function ChatRoom({user}) {
   };
   
   return (
-    <div className="max-w-4xl mx-auto p-4 min-h-screen bg-gray-100">
+    <div className="max-w-auto mx-auto px-[8em] py-[1.5%] min-h-screen bg-gradient-to-br from-black to-blue-900">
       <header className="bg-blue-900 text-white p-4 rounded-t-lg flex justify-between items-center">
         <h1 className="text-2xl font-bold">🔥 Chat Room</h1>
         <button 
@@ -110,6 +110,7 @@ function ChatRoom({user}) {
         </form>
       )}
     </div>
+
   );
 }
 

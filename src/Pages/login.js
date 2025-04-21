@@ -6,6 +6,12 @@ function LoginPage() {
   const navigate = useNavigate();
 
   const handleSignIn = async () => {
+
+    provider.setCustomParameters({
+      prompt: "consent select_account"
+    });
+
+
     try {
       await signInWithPopup(auth, provider);
       navigate("/chat");
